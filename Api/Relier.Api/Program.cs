@@ -10,24 +10,6 @@ builder.Services.AddInfrastructureJWT(builder.Configuration);
 builder.Services.AddInfrastructureSwagger(builder.Configuration);
 builder.Services.AddSwaggerGen(options =>
 {
-    //options.SwaggerDoc("v1", new OpenApiInfo
-    //{
-    //    Version = "v1",
-    //    Title = "Teste API",
-    //    Description = "Projeto API",
-    //    TermsOfService = new Uri("https://examplp.com/termoservico"),
-    //    Contact = new OpenApiContact
-    //    {
-    //        Name = "Contato",
-    //        Url = new Uri("https://examplo.com/contato")
-    //    },
-    //    License = new OpenApiLicense
-    //    {
-    //        Name = "Licença",
-    //        Url = new Uri("https://examplo.com/licenca")
-    //    }
-    //});
-
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 });
