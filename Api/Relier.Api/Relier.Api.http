@@ -1,0 +1,6 @@
+@Relier.Api_HostAddress = http://localhost:5064
+
+GET {{Relier.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
